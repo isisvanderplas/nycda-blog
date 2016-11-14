@@ -22,7 +22,7 @@ app.get('/', (req, res) => {
 
 // render the admin page
 app.get('/admin', (req, res) => {
-  res.render('posts/index');
+  res.render('admin');
 });
 
 
