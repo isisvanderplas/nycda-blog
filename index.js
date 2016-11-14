@@ -17,7 +17,7 @@ app.use(morgan('dev'));
 
 // testing if everything works
 app.get('/', (req, res) => {
-  res.send('Hello world');
+  res.render('index');
 });
 
 
