@@ -20,6 +20,10 @@ app.get('/', (req, res) => {
   res.render('index');
 });
 
+// render the admin page
+app.get('/admin', (req, res) => {
+  res.render('posts/index');
+});
 
 
 // create a listen function, and connect a localhost to it
