@@ -25,6 +25,10 @@ app.get('/admin/blog-posts', (req, res) => {
   res.render('admin');
 });
 
+app.get('/new', (req, res) => {
+  res.render('new');
+});
+
 
 // create a listen function, and connect a localhost to it
 app.listen(3000, () => {

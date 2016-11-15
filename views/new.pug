@@ -1,0 +1,23 @@
+extends layout/application.pug
+
+block content
+
+  section.container
+    form(action="/blog-posts" method="POST")
+      .form-group
+        label Post Title:
+        input.form-control(type="text" name="title")
+      .form-group
+        label Post Slug:
+        input.form-control(type="text" name="slug")
+      .form-group
+        label Post Content:
+        textarea.form-control(rows="20" name="content") 
+
+
+
+
+
+
+
+//- same problem: path won't work in the posts folder
