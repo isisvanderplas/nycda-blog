@@ -20,8 +20,8 @@ app.get('/', (req, res) => {
   res.render('index');
 });
 
-// render the admin page
-app.get('/admin', (req, res) => {
+// render the admin page, on admin/blog-posts, later add authentication
+app.get('/admin/blog-posts', (req, res) => {
   res.render('admin');
 });
 
