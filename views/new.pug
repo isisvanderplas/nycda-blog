@@ -3,7 +3,7 @@ extends layout/application.pug
 block content
 
   section.container
-    form(action="/blog-posts" method="POST")
+    form(action="/posts" method="POST")
       .form-group
         label Post Title:
         input.form-control(type="text" name="title")
@@ -12,8 +12,9 @@ block content
         input.form-control(type="text" name="slug")
       .form-group
         label Post Content:
-        textarea.form-control(rows="20" name="content") 
-
+        textarea.form-control(rows="20" name="content")
+      .form-group.text-xs-right
+        button.btn.btn-large(type="submit") Submit
 
 
 
