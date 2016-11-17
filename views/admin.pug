@@ -1,0 +1,33 @@
+extends layout/application
+
+
+block content
+
+
+	.container
+		.card.card-block
+			.row
+				.col-xs-8
+					a(href="/")
+						h5 blog title
+
+				.col-xs-4.text-xs-right
+					a(href="/" class="btn btn-warning") edit
+					a(href="/" class="btn btn-danger") delete
+
+		.card.card-block
+			.row
+				.col-xs-8
+					a(href="/")
+						h5 blog title
+
+				.col-xs-4.text-xs-right
+					a(href="/" class="btn btn-warning") edit
+					a(href="/" class="btn btn-danger") delete
+
+
+
+
+
+//- want to put content in a "card", won't work => first card, then row. solved
+//-  want to post this in the posts folder, path won't work
